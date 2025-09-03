@@ -21,7 +21,7 @@ class PasswordValidatorTest {
 //
 //- Password with less than 8 characters should be invalid
 //- Password with 8 or more characters should pass length validation
-//- Password without uppercase letter should be invalid
+//- Password without uppercase letter should be invalida
 //- Password without lowercase letter should be invalid
 //- Password without number should be invalid
 //- Password without special character should be invalid

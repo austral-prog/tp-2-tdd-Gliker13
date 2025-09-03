@@ -32,6 +32,6 @@ public class PasswordValidator {
         // - At least 1 uppercase letter
         // - At least 1 lowercase letter  
         // - At least 1 number
-        // - At least 1 special character (!@#$%^&*()_+-=[]{}|;:,.<>?)
+        // - At least 1 special character (!@#$%^&*()_+-=[]{}|;:,.<>?)a
     }
 }
