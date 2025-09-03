@@ -9,8 +9,12 @@ class PasswordValidatorTest {
 
     // TODO: Replace these lines with your tests
     @Test
-    void exampleTest(){
-        assertEquals(4, 2 + 1);
+    void isValid() {
+        assertTrue(PasswordValidator.isValid("Jorge2<<1!"));
+        assertFalse(PasswordValidator.isValid("9012930941234123"));
+        assertFalse(PasswordValidator.isValid("jorge1293!"));
+        assertFalse(PasswordValidator.isValid("JORGE123!"));
+        assertTrue(PasswordValidator.isValid("JorEEe2<<1!"));
     }
 
 //    Missing tests:

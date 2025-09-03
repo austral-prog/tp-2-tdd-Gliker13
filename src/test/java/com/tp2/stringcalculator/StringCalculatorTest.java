@@ -5,11 +5,33 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class StringCalculatorTest {
-
-    // TODO: Replace these lines with your tests
     @Test
-    void exampleTest(){
-        assertEquals(4, 2 + 1);
+    void Empty(){
+        assertEquals(0,StringCalculator.add(""));
+    }
+    @Test
+    void Single(){
+        assertEquals(5,StringCalculator.add("5"));
+        assertEquals(9,StringCalculator.add("9"));
+    }
+    @Test
+    void TwoNumbers(){
+        assertEquals(3,StringCalculator.add("1,2"));
+        assertEquals(10,StringCalculator.add("4,6"));
+    }
+    @Test
+    void MoreNumbers(){
+        assertEquals(23,StringCalculator.add("4,6,9,2,2"));
+        assertEquals(30,StringCalculator.add("5,5,3,3,3,1,8,2"));
+    }
+    @Test
+    void newline(){
+        assertEquals(6,StringCalculator.add("1\n2,3"));
+        assertEquals(10,StringCalculator.add("1\n2\n3,\n\n4"));
+    }
+    @Test
+    void Negatives(){
+        assertThrows(IllegalArgumentException.class, () -> StringCalculator.add("-1"));
     }
 
 //    Missing tests:

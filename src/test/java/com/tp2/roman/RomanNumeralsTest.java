@@ -7,8 +7,26 @@ class RomanNumeralsTest {
 
     // TODO: Replace these lines with your tests
     @Test
-    void exampleTest(){
-        assertEquals(4, 2 + 1);
+    void Simples(){
+        assertEquals("I",RomanNumerals.convert(1));
+        assertEquals("V",RomanNumerals.convert(5));
+        assertEquals("XC",RomanNumerals.convert(90));
+    }
+    @Test
+    void LXXVIII(){
+        assertEquals("LXXVIII",RomanNumerals.convert(78));
+    }
+    @Test
+    void MCMI(){
+        assertEquals("MCMI",RomanNumerals.convert(1901));
+    }
+    @Test
+    void MM(){
+        assertEquals("MM",RomanNumerals.convert(2000));
+    }
+    @Test
+    void MMMCMXCIX(){
+        assertEquals("MMMCMXCIX",RomanNumerals.convert(3999));
     }
 
 //    Missing tests:
